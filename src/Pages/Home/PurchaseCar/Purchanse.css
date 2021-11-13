@@ -1,0 +1,43 @@
+.body{
+    background-color: rgb(240, 234, 240);
+}
+.booking-container{
+padding-top: 50px;
+}
+.booking-form{
+    width: 350px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    background-image: url('../../../images/banner/banner-02.png');
+    background-repeat: no-repeat;
+    border-top:5px solid #F54114;
+}
+.booking-form h3{
+    color: snow;
+    padding-top: 15px;
+    
+}
+.booking-form input, textarea {
+    justify-content: center;
+    margin-top: 30px;
+    padding: 5px;
+    border: 1px solid rgb(235, 135, 135);
+    box-shadow: 1px 1px 1px 1px rgb(235, 135, 135);
+    border-radius: 5px;
+    width: 300px;
+}
+.card{
+    margin-top: 50px;
+}
+.booked-button:hover{
+    color: white;
+    background-color: tomato;
+    border: 2px solid rgb(218, 82, 41);
+    box-shadow: 1px 1px 1px 1px rgb(218, 82, 41);
+     border-radius: 5px;
+ }
+ @media(min-width: 992px) {
+     .details-card{
+         width: 28rem;
+     }
+ }

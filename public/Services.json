@@ -1,0 +1,98 @@
+[
+    {
+        "title": "2010 Audi A6 ",
+        "price": "120,000 ",
+        "description": "The 2010 Audi A6 has a refined interior and excellent safety scores, but an underpowered base engine and confusing interior electronics keep it anchored to the middle of the pack.",
+        "img": "https://i.ibb.co/cTvRSjg/9-1.png",
+        "fuel": "Petrol",
+        "top-speed": "260mph"
+    },
+    {
+        "title": "Ford Focus Titanium",
+        "price": "90,000",
+        "description": "The 2015 Ford Focus sits in the middle of our compact car rankings. It has a high-end interior and sporty handling, but its abysmal reliability rating and cramped rear-seat legroom hold it back.",
+        "img": "https://i.ibb.co/BG46Dkx/8.png",
+        "fuel": "Petrol",
+        "top-speed": "280mph"
+    },
+    {
+        "title": "BMW M4",
+        "price": "75,000",
+        "description": "BMW's long-awaited M4 Competition doesn't hold back any punches. It's fast, immensely capable, but also superb fun.Power and torque figures of 503bhp and 479lb ft look very healthy though. ",
+        "img": "https://i.ibb.co/j86r5YT/7.png",
+        "fuel": "Petrol",
+        "top-speed": "290mph"
+    },
+    {
+        "title": "Bugatti Chiron 8.0 W16",
+        "price": "180,000",
+        "description": "The CHIRON is the fastest, most powerful, and exclusive production super sports car in BUGATTI's history. Its sophisticated design, innovative technology",
+        "img": "https://i.ibb.co/Qm9HnLH/6.png",
+        "fuel": "Petrol",
+        "top-speed": "320mph"
+    },
+    {
+        "title": "2014 Jaguar F-Type",
+        "price": "55,500",
+        "description": "Jaguar's first return to the true sports car market since the legendary E-Type, the 2014 F-Type bears a heavy burden in living up to its lineage. Fortunately, the F-Type impresses with its performance, not just its pedigree.",
+        "img": "https://i.ibb.co/3yKCC46/5.png",
+        "fuel": "Petrol",
+        "top-speed": "295mph"
+    },
+    {
+        "title": "2015 Kia Forte",
+        "price": "2000,000",
+        "description": "The 2015 Kia Forte sits near the top of the compact car class. It boasts an upscale cabin, straightforward technology, and snappy available engines. However, it also has a stiff ride and limited standard and available features.     ",
+        "img": "https://i.ibb.co/c2Tm6pq/4.png",
+        "fuel": "Diesel",
+        "top-speed": "220mph"
+    },
+    {
+        "title": "Volvo S60 T5",
+        "price": "41,200",
+        "description": "Volvo makes several changes to the 2020 S60 lineup that include more standard features, new options, and a larger 11.6-kWh battery pack for the plug-in hybrid.",
+        "img": "https://i.ibb.co/nQ6bSfM/3.png",
+        "fuel": "Battery",
+        "top-speed": "230mph"
+    },
+    {
+        "title": "BMW 1 SERIES M135I",
+        "price": "33,300",
+        "description": "The 2014 BMW 1 Series M135i is a rear-wheel drive five-door hatchback that was released to the Australian market on 01/09/2014 classified as a F20 MY15.",
+        "img": "https://i.ibb.co/kJ0WwFq/2.png",
+        "fuel": "Petrol",
+        "top-speed": "280mhp"
+    },
+    {
+        "title": "Porsche Cayman",
+        "price": "176,000",
+        "description": " Porsche Cayman is nimble and fun to drive, pampering travelers with its supportive seats and handsome styling. It also boasts an outstanding reliability rating.",
+        "img": "https://i.ibb.co/x5FNWpP/1.png",
+        "fuel": "Petrol",
+        "top-speed": "300mhp"
+    },
+    {
+        "title": "Nissan R35 GTR",
+        "price": "86,000",
+        "description": "Combining lessons learned on the racetrack with a unique viewpoint on what makes the ultimate road car, the GT-R NISMO completely redefines supercar performance.",
+        "img": "https://i.ibb.co/cxsyC5D/14.png",
+        "fuel": "Petrol",
+        "top-speed": "320mhp"
+    },
+    {
+        "title": "2020 Lincoln Nautilus",
+        "price": "95,000",
+        "description": "Lincoln offers a monochromatic paint scheme on a few of its vehicles, including the Navigator, Continental, and MKZ.American luxury brand is now expanding its available Monochromatic Package to the Nautilus.",
+        "img": "https://i.ibb.co/7C3XY8H/11.png",
+        "fuel": "Octane",
+        "top-speed": "245mph"
+    },
+    {
+        "title": "Skoda Karoq",
+        "price": "130,300",
+        "description": "As far as fuel consumption goes the Karoq is a heavy car so take the official figures with a pinch of salt, especially in the smaller-engined petrol models Consequently, if economy is one of your prime concerns.",
+        "img": "https://i.ibb.co/Y2BcfwD/12.png.png",
+        "fuel": "Petrol",
+        "top-speed": "230mph"
+    }
+]

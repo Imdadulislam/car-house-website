@@ -1,0 +1,38 @@
+
+@media(min-width: 992px) {
+    .login-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    background-color: #F7F8FA;
+    height: 220px;
+    }
+    .login-form{
+        width: 500px;
+        padding: 20px;
+        background-color: #F7F8FA; 
+    }
+    .login-content h1{
+        margin: auto;
+        color: #F54114;
+        font-size: 62px; 
+    }
+}
+@media(max-width: 576px){
+    .login-content{
+        padding-top: 30px;
+        background-color: #F7F8FA;
+    }
+    .login-form{
+        margin: auto;
+        width: 300px;
+        background-color: #F7F8FA; 
+        padding: 20px;
+    }
+    .login-content h1{
+        margin: auto;
+        color: #F54114;
+        font-size: 45px; 
+        margin-bottom: 25px;
+    }
+}

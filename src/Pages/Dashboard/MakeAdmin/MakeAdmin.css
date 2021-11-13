@@ -1,0 +1,19 @@
+
+.form-content{
+    border-top:10px solid #F54114;
+     margin-top:20px;
+     background-image: url(../../../images/banner/banner-02-c.jpg);
+     background-size: cover;
+     padding-bottom: 10px;
+     padding-top: 20px;
+}
+@media(max-width: 576px){
+ .form-content{
+     width: 350px;
+ }
+}
+@media (min-width: 992px) {
+    .form-content{
+        width: 550px;
+    }
+}

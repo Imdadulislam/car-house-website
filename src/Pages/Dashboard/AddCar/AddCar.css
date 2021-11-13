@@ -1,0 +1,34 @@
+.NewService-container{
+    padding-top: 50px;
+    background-color: #e9f2fa;
+    }
+    .NewService-form{
+        width: 350px;
+        margin:auto;
+        margin-top: 50px;
+        padding-bottom: 30px;
+        background-image: url('../../../images/banner/carssssssss.png');
+    }
+    .NewService-form h3{
+        color: snow;
+        padding-top: 15px;
+    }
+    .NewService-form input, textarea {
+        justify-content: center;
+        margin-top: 30px;
+        padding: 5px;
+        border: 1px solid rgb(235, 135, 135);
+        box-shadow: 1px 1px 1px 1px rgb(235, 135, 135);
+        border-radius: 5px;
+        width: 300px;
+    }
+    .Add-button{
+        color: white;
+        background-color: rgb(240, 149, 133);
+    }
+    .Add-button:hover{
+       background-color: tomato;
+       border: 2px solid rgb(218, 82, 41);
+       box-shadow: 1px 1px 1px 1px rgb(218, 82, 41);
+        border-radius: 5px;
+    }

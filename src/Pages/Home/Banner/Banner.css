@@ -1,0 +1,75 @@
+
+    .button{
+        text-decoration: none;
+        color: #fff;
+    }
+    .vehicles-text{
+        color: #FC2D09;
+    }
+    .banner-bg{
+        position:relative;
+        left: 150px;
+    }
+    .banner-car{
+        position:relative;
+        bottom: 360px;
+    }
+    .banner-tyre{
+        position:relative;
+        right: 300px;
+        bottom: 300px;
+    }
+    .banner{
+        display: flex;
+        align-items: center;
+    }
+    .banner-content{
+        width: 50%;
+        
+    
+    }
+    .banner-content h1{
+        font-size: 50px;
+        font-weight: 550;
+        margin-bottom: 10px;
+        color: rgb(5, 5, 5);
+    }
+    .banner-content .button{
+        background: linear-gradient(90deg,  #FC2D09, #eb4d25);
+        padding: 12px 55px;
+        display: inline-block;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    /* --------media------- */
+    @media(max-width: 576px){
+        .banner-content h1{
+            font-size: 30px;
+        }
+        .button{
+            padding: 10px 20px;
+        }
+        .banner{
+            display: block;
+            align-items: center;
+        }
+        .banner-bg{
+            position:relative;
+            right: 240px;
+            bottom: 250px;
+            width: 200px;
+        }
+        .banner-car{
+            position:relative;
+            bottom: 360px;
+            left: 50px;
+            width: 290px;
+        }
+        .banner-tyre{
+            position:relative;
+            right: 10px;
+            bottom: 300px;
+        }
+    }

@@ -1,0 +1,14 @@
+
+@media(max-width: 576px){
+    .image-logo{
+        width: 70px;
+    }
+   }
+   @media (min-width: 992px) {
+    .image-logo{
+           width: 120px;
+       }
+       .text{
+           font-size: 20px;
+       }
+   }

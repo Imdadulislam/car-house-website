@@ -1,0 +1,21 @@
+.review-conatiner{
+margin-bottom: 30px;
+}
+.form-content{
+    box-shadow: 1px 1px 2px silver;
+    border-top:10px solid #F54114;
+     margin-top:20px;
+     background-color: rgb(144, 144, 144);
+     padding-bottom: 30px;
+     padding-top: 20px;
+}
+@media(max-width: 576px){
+ .form-content{
+     width: 350px;
+ }
+}
+@media (min-width: 992px) {
+    .form-content{
+        width: 550px;
+    }
+}
