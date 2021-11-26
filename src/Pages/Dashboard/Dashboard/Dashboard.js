@@ -115,7 +115,7 @@ const Dashboard = () => {
                     <Route path={`${url}/review`}>
                         <Review></Review>
                     </Route>
-                    <Route path={`${url}/pay`}>
+                    <Route path={`${url}/pay/:perchaseId`}>
                         <Pay></Pay>
                     </Route>
                 </Switch>

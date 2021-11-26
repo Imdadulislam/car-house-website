@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
 
 const Mypurchase = () => {
@@ -50,6 +51,7 @@ const Mypurchase = () => {
                                         <p className="card-text text-secondary">Email: {purchase?.email}</p>
                                         <p className="card-text text-secondary">Booking Code: {purchase?._id}</p>
                                         <p className="card-text text-secondary">Status: {purchase?.status}</p>
+                                        <p className="card-text text-secondary">Payment: {purchase.payment ? 'Paid' : <Link to={`/dashboard/pay/${purchase?._id}`}><button className="btn btn-warning px-3">Pay</button></Link>}</p>
                                         <div >
                                             <button onClick={() => handleDelete(purchase?._id)} className="btn btn-danger px-5">Cancel purchase</button>
                                         </div>
