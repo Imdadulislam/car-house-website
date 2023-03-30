@@ -6,7 +6,7 @@ const MakeAdmin = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        fetch('https://stormy-ridge-19844.herokuapp.com/userinfo/admin', {
+        fetch('https://car-house-server-imdadulislam.vercel.app/userinfo/admin', {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)
@@ -20,11 +20,11 @@ const MakeAdmin = () => {
                 }
             })
     }
-    
+
 
     return (
         <>
-            
+
             <div className="mb-5 mt-5">
                 <h3 className="text-center pt-5">Make A User As Admin</h3>
                 <div className="container form-content">

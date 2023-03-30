@@ -8,7 +8,7 @@ const Review = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        fetch('https://stormy-ridge-19844.herokuapp.com/review', {
+        fetch('https://car-house-server-imdadulislam.vercel.app/review', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)
@@ -25,7 +25,7 @@ const Review = () => {
 
     return (
         <div className="review-conatiner">
-                <h3 className="text-center pt-5">Review and Feedback</h3>
+            <h3 className="text-center pt-5">Review and Feedback</h3>
             <div className="container form-content">
                 <form onSubmit={handleSubmit(onSubmit)} className="d-flex flex-column gap-1">
                     <label>Customer Name</label>

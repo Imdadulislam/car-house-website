@@ -82,7 +82,7 @@ const useFirebase = () => {
     }, [auth])
 
     useEffect(() => {
-        fetch(`https://stormy-ridge-19844.herokuapp.com/userinfo/${user.email}`)
+        fetch(`https://car-house-server-imdadulislam.vercel.app/userinfo/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -99,7 +99,7 @@ const useFirebase = () => {
 
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('https://stormy-ridge-19844.herokuapp.com/userinfo', {
+        fetch('https://car-house-server-imdadulislam.vercel.app/userinfo', {
             method: method,
             headers: {
                 'content-type': 'application/json'

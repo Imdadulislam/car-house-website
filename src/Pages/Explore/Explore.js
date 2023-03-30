@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Explore = () => {
     const [cars, setCars] = useState([]);
     useEffect(() => {
-        fetch('https://stormy-ridge-19844.herokuapp.com/cars')
+        fetch('https://car-house-server-imdadulislam.vercel.app/cars')
             .then(res => res.json())
             .then(result => setCars(result))
     }, [])

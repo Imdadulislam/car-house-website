@@ -11,14 +11,14 @@ const ManageAllPurchase = () => {
 
 
     useEffect(() => {
-        fetch('https://stormy-ridge-19844.herokuapp.com/perchase')
+        fetch('https://car-house-server-imdadulislam.vercel.app/perchase')
             .then(res => res.json())
             .then(data => setAllPurchases(data))
     }, []);
 
 
     const handleUpdate = id => {
-        fetch(`https://stormy-ridge-19844.herokuapp.com/updateStatus/${id}`, {
+        fetch(`https://car-house-server-imdadulislam.vercel.app/updateStatus/${id}`, {
             method: 'PUT',
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -34,7 +34,7 @@ const ManageAllPurchase = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure want to cancel Booking?');
         if (proceed) {
-            fetch(`https://stormy-ridge-19844.herokuapp.com/cancelPurchase/${id}`, {
+            fetch(`https://car-house-server-imdadulislam.vercel.app/cancelPurchase/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())

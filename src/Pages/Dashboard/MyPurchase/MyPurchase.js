@@ -8,7 +8,7 @@ const Mypurchase = () => {
 
 
     useEffect(() => {
-        fetch(`https://stormy-ridge-19844.herokuapp.com/perchase/${user?.email}`)
+        fetch(`https://car-house-server-imdadulislam.vercel.app/perchase/${user?.email}`)
             .then(res => res.json())
             .then(data => setMyorders(data))
     }, [user?.email]);
@@ -16,7 +16,7 @@ const Mypurchase = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure want to cancel Purchase?');
         if (proceed) {
-            fetch(`https://stormy-ridge-19844.herokuapp.com/cancelPurchase/${id}`, {
+            fetch(`https://car-house-server-imdadulislam.vercel.app/cancelPurchase/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())
