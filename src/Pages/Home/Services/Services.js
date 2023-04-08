@@ -6,7 +6,7 @@ import Service from '../Service/Service';
 const Services = () => {
     const [cars, setCars] = useState([]);
     useEffect(() => {
-        fetch('https://car-house-server-imdadulislam.vercel.app/cars')
+        fetch('https://car-house-server-18lp.onrender.com/cars')
             .then(res => res.json())
             .then(result => {
                 const sliceData = result.slice(0, 6)

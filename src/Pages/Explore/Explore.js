@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Explore = () => {
     const [cars, setCars] = useState([]);
     useEffect(() => {
-        fetch('https://car-house-server-imdadulislam.vercel.app/cars')
+        fetch('https://car-house-server-18lp.onrender.com/cars')
             .then(res => res.json())
             .then(result => setCars(result))
     }, [])

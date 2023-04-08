@@ -8,7 +8,7 @@ const Review = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const onSubmit = data => {
-        fetch('https://car-house-server-imdadulislam.vercel.app/review', {
+        fetch('https://car-house-server-18lp.onrender.com/review', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)

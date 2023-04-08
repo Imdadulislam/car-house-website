@@ -11,14 +11,14 @@ const ManageAllPurchase = () => {
 
 
     useEffect(() => {
-        fetch('https://car-house-server-imdadulislam.vercel.app/perchase')
+        fetch('https://car-house-server-18lp.onrender.com/perchase')
             .then(res => res.json())
             .then(data => setAllPurchases(data))
     }, []);
 
 
     const handleUpdate = id => {
-        fetch(`https://car-house-server-imdadulislam.vercel.app/updateStatus/${id}`, {
+        fetch(`https://car-house-server-18lp.onrender.com/updateStatus/${id}`, {
             method: 'PUT',
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ status }),
@@ -34,7 +34,7 @@ const ManageAllPurchase = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure want to cancel Booking?');
         if (proceed) {
-            fetch(`https://car-house-server-imdadulislam.vercel.app/cancelPurchase/${id}`, {
+            fetch(`https://car-house-server-18lp.onrender.com/cancelPurchase/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())

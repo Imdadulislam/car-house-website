@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 const ManageCars = () => {
     const [cars, setCars] = useState([]);
     useEffect(() => {
-        fetch('https://car-house-server-imdadulislam.vercel.app/cars')
+        fetch('https://car-house-server-18lp.onrender.com/cars')
             .then(res => res.json())
             .then(result => setCars(result))
     }, []);
@@ -13,7 +13,7 @@ const ManageCars = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure want to Delete This Car?');
         if (proceed) {
-            fetch(`https://car-house-server-imdadulislam.vercel.app/deleteCar/${id}`, {
+            fetch(`https://car-house-server-18lp.onrender.com/deleteCar/${id}`, {
                 method: "DELETE",
             })
                 .then(res => res.json())

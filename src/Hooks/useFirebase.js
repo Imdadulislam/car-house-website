@@ -82,7 +82,7 @@ const useFirebase = () => {
     }, [auth])
 
     useEffect(() => {
-        fetch(`https://car-house-server-imdadulislam.vercel.app/userinfo/${user.email}`)
+        fetch(`https://car-house-server-18lp.onrender.com/userinfo/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user.email])
@@ -99,7 +99,7 @@ const useFirebase = () => {
 
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('https://car-house-server-imdadulislam.vercel.app/userinfo', {
+        fetch('https://car-house-server-18lp.onrender.com/userinfo', {
             method: method,
             headers: {
                 'content-type': 'application/json'

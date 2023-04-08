@@ -5,7 +5,7 @@ import './AddCar.css';
 const AddCar = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        fetch('https://car-house-server-imdadulislam.vercel.app/cars', {
+        fetch('https://car-house-server-18lp.onrender.com/cars', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

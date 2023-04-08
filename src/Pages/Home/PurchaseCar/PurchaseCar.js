@@ -23,7 +23,7 @@ const PurchaseCar = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     useEffect(() => {
-        fetch(`https://car-house-server-imdadulislam.vercel.app/cars/${perchaseId}`)
+        fetch(`https://car-house-server-18lp.onrender.com/cars/${perchaseId}`)
             .then(res => res.json())
             .then(data => setPerchase(data))
     }, [perchaseId]);
@@ -32,7 +32,7 @@ const PurchaseCar = () => {
     const onSubmit = data => {
         data.status = "Pending";
         console.log(data);
-        fetch('https://car-house-server-imdadulislam.vercel.app/perchase', {
+        fetch('https://car-house-server-18lp.onrender.com/perchase', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
