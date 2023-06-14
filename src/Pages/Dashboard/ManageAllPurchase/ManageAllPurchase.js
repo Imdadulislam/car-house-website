@@ -66,6 +66,7 @@ const ManageAllPurchase = () => {
                                         <p className="card-text"> Name:{e?.name}</p>
                                         <p className="card-text">Email: {e?.email}</p>
                                         <p className="card-text">Date: {e?.date}</p>
+                                        <p className="card-text">Description: {e?.Description}</p>
                                         <p className="card-text">Status: {e?.status}</p>
 
 
