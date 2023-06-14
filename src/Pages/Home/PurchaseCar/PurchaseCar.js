@@ -43,7 +43,7 @@ const PurchaseCar = () => {
             .then(result => {
                 console.log(result);
                 if (result.insertedId) {
-                    alert('Car Perchase Successfully');
+                    alert('Successfully Submitted');
                     reset();
                 }
             })
@@ -54,7 +54,7 @@ const PurchaseCar = () => {
             <NavBar></NavBar>
 
             <div className="d-lg-flex justify-content-between pt-5" style={{ backgroundColor: '#F7F8FA', height: '220px' }}>
-                <h1 style={{ margin: 'auto', fontSize: '62px' }}>Perchase Your Dream <span style={{ margin: 'auto', color: '#F54114', fontSize: '62px' }}>Car</span></h1>
+                <h1 style={{ margin: 'auto', fontSize: '62px' }}>Booking Your Dream <span style={{ margin: 'auto', color: '#F54114', fontSize: '62px' }}>Car</span></h1>
                 <img className="img-fluid" src={carpic} alt="" />
                 <img style={banner} src={tyrepic} alt="" />
             </div>
@@ -70,7 +70,7 @@ const PurchaseCar = () => {
                 <div className="">
                     <form className="booking-form mb-5" onSubmit={handleSubmit(onSubmit)}>
 
-                        <h3 style={{ color: '#F54114', fontWeight: 'bold', backgroundColor: 'white' }}>Fillup & Submit Your Info For Perchase Your Dream Car!</h3>
+                        <h3 style={{ color: '#F54114', fontWeight: 'bold', backgroundColor: 'white' }}>Fillup & Submit Your Info For Booking Your Dream Car!</h3>
 
                         <input name="name" defaultValue={user.displayName} {...register("name")} />
                         <input name="email" defaultValue={user.email} {...register("email", { required: true })} />

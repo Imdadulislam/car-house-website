@@ -8,13 +8,14 @@ const Mypurchase = () => {
 
 
     useEffect(() => {
-        fetch(`https://car-house-server-18lp.onrender.com/perchase/${user?.email}`)
+        fetch(`https://car-house-server-18lp.onrender.com/perchase/mine?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setMyorders(data))
     }, [user?.email]);
 
+
     const handleDelete = (id) => {
-        const proceed = window.confirm('Are you sure want to cancel Purchase?');
+        const proceed = window.confirm('Are you sure want to cancel Booking?');
         if (proceed) {
             fetch(`https://car-house-server-18lp.onrender.com/cancelPurchase/${id}`, {
                 method: "DELETE",
@@ -33,10 +34,12 @@ const Mypurchase = () => {
     }
     return (
         <div>
+
             <div className="py-5" style={{ background: '#e9f2fa' }}>
-                <h2 className="text-secondary text-center">My Purchase</h2> <hr className="w-25 mx-auto" />
+                <h2 className="text-secondary text-center">My Booking</h2> <hr className="w-25 mx-auto" />
                 {
                     myorders?.map(purchase =>
+
 
                         <div className="card mb-3 mx-auto" style={{ maxWidth: "48rem" }} key={purchase?._id}>
                             <div className="row g-0">
@@ -51,9 +54,12 @@ const Mypurchase = () => {
                                         <p className="card-text text-secondary">Email: {purchase?.email}</p>
                                         <p className="card-text text-secondary">Booking Code: {purchase?._id}</p>
                                         <p className="card-text text-secondary">Status: {purchase?.status}</p>
+                                        <p className="card-text text-secondary">
+                                            Description
+                                            : {purchase?.Description}</p>
                                         <p className="card-text text-secondary">Payment: {purchase.payment ? 'Paid' : <Link to={`/dashboard/pay/${purchase?._id}`}><button className="btn btn-warning px-3">Pay</button></Link>}</p>
                                         <div >
-                                            <button onClick={() => handleDelete(purchase?._id)} className="btn btn-danger px-5">Cancel purchase</button>
+                                            <button onClick={() => handleDelete(purchase?._id)} className="btn btn-danger px-5">Cancel Booking</button>
                                         </div>
                                     </div>
                                 </div>

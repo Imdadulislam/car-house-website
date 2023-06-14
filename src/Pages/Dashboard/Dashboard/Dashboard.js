@@ -51,12 +51,12 @@ const Dashboard = () => {
                         <Offcanvas.Body className="gap-5">
                             {!admin &&
                                 <li className="lists">
-                                    <Link to={`${url}/mypurchase`} className="link"><i className="fas fa-shopping-cart"></i> My purchase</Link>
+                                    <Link to={`${url}/mypurchase`} className="link"><i className="fas fa-shopping-cart"></i> My Booking</Link>
                                 </li>
                             }
                             {!admin &&
                                 <li className="lists">
-                                    <Link to={`${url}/review`} className="link"><i className="fas fa-star-half-alt"></i> Review & Ratting</Link>
+                                    <Link to={`${url}/review`} className="link"><i className="fas fa-star-half-alt"></i> Give Review & Ratting</Link>
                                 </li>
                             }
                             {admin && <li className="lists">

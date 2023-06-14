@@ -11,7 +11,7 @@ const ManageAllPurchase = () => {
 
 
     useEffect(() => {
-        fetch('https://car-house-server-18lp.onrender.com/perchase')
+        fetch('https://car-house-server-18lp.onrender.com/perchase/all')
             .then(res => res.json())
             .then(data => setAllPurchases(data))
     }, []);
@@ -40,7 +40,7 @@ const ManageAllPurchase = () => {
                 .then(res => res.json())
                 .then(data => {
                     if (data.deletedCount > 0) {
-                        alert('deleted SuccessFully');
+                        alert('Cancel SuccessFully');
                         const remainingUsers = allPurchases.filter(cancelPurchase => cancelPurchase._id !== id);
                         setAllPurchases(remainingUsers);
                     }
@@ -51,7 +51,7 @@ const ManageAllPurchase = () => {
     return (
         <div>
             <div className="py-5" style={{ background: '#e9f2fa' }}>
-                <h2 className="text-secondary text-center">Manage All Perchase</h2> <hr />
+                <h2 className="text-secondary text-center">Manage All Booking</h2> <hr />
                 {
                     allPurchases.map(e =>
 
